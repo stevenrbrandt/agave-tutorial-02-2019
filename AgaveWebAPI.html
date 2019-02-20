@@ -11796,7 +11796,9 @@ div#notebook {
 <div class="inner_cell" mark.text-left>
 <div class="text_cell_render border-box-sizing rendered_html">
 <left
-<h1>Find this page at <a href="http://krt3.lsu.edu/training/agave/tutorial-2-20-19/AgaveWebAPI.html" target="_blank" >http://krt3.lsu.edu/training/agave/tutorial-2-20-19/AgaveWebAPI.html</a></h1>
+<h1>Find this page at 
+        <a href="http://cct.lsu.edu/~sbrandt/training/agave/tutorial-2-20-19/AgaveWebAPI.html"
+target="_blank" >http://cct.lsu.edu/~sbrandt/training/agave/tutorial-2-20-19/AgaveWebAPI.html</a></h1>
 
 
 <h2 id="ScienceGateway">What is a Science Gateway?</h2> 
@@ -11849,21 +11851,20 @@ To get started go to the Agave web page and create an account:
    <li><img src="images/successfullyAddedAccount.png" alt="Successfully Created Account"></li> -->
    <li>Go to <a href="https://togo.agaveplatform.org" target="_blank">https://togo.agaveplatform.org</a>  </li>
    <li>Click on the "Create An Account" link in the gray bar under the "Login" button. 
-		   <img src="images/togoLogin.png" alt="Agave Login SCreen"></li>
+		   <img src="images/togoLogin.png" alt="Agave Login Screen"></li>
    <li>Fill in the information on the form that comes up and click on the "Sign up" button.  </li>
    <li>Follow the instructions that come up from Agave.  </li>
    <li>Go your email, the one you used to sign up with, and activate your Agave account.  If you don't activate the Agave account you can't participate in the tutorial because you can't login to the Agave platform. </li>
+   <li>Now go to the Agave ToGo login page: at <a href="http://togo.agaveplatform.org/" target="_blank">http://togo.agaveplatform.org</a><br>
    </ul>
 </ul>
    </li>
-   <li>Now go to the Agave ToGo login page: at <a href="http://togo.agaveplatform.org/" target="_blank">http://togo.agaveplatform.org</a><br>
 	  <h2>Agave Login Screen</h2>
-		   <img src="images/firstLoginScreen.png" alt="Agave ToGo sign in screen" height="62" width="62" >       </li>     
-   <li> In the above image notice the right arrow pointing to the round blue circle (that's an agave plant inside)?  This is the correct "tenant" and will click on it.</li>
+   <li> In the image below, notice the right arrow pointing to the round blue circle (that's an agave plant inside)?  This is the correct "tenant" and will click on it.</li>
    <li>Notice the left arrow pointing at the "Login" block. Click this to login. <br> 
    </li>
 		   <img src="images/selectTenant.png" alt="Agave ToGo sign in screen">       </li>     
-   f you don't see a menu bar on the left hand side of your Agave page widen your browser window until you do.  <li>This is what you see if everything goes correctly. <br>
+   If you don't see a menu bar on the left hand side of your Agave page widen your browser window until you do.  <li>This is what you see if everything goes correctly. <br>
 		   <img src="images/AgaveFirstGlance.png" alt="Login Success image"></li>
 </ul>	   
 </ul>
@@ -11880,8 +11881,8 @@ To get started go to the Agave web page and create an account:
 In the image below notice the three ovals on the top right.  Click on the leftmost oval that has "Form" in it.  We won't distract ourselves with the code until we learn what we are doing.   
   <img src="images/buildStorageSys1.png" alt="Storage System">
   On the drop down menu under the line "Select System Type" chose "Storage", this tells Agave which type of system we are defining.  The storage system is where your data and output are stored. </p>
-  <p>You can copy and paste the json code from
-<a href="storage-system.txt">this link</a> to populate the web forms that follow with nice defaults.</p>
+  <p>You can copy and paste the
+<a href="storage-system.txt">storage system json code</a> to populate the web forms that follow with nice defaults.</p>
 
 <p>
 Click the "Next" box to go to the second page in defining the storages system. The next few pages define the details of the machine we will be using for storage.
@@ -11930,6 +11931,8 @@ The next screen that comes up will indicate success or failure. Hopefully you wi
   This indicates you successfully completed the form.  Now let's test and see if we entered everything correctly.  On this form click on the "Browse Systems" button.  If you see this you did it correctly:<br>
 
   <img src="images/fileBrowser.png" alt="Second part of above page.">
+
+  One final step: Select the storage system as the default. yyy
 </p>
 
 <h2 id=CreateExe">Create the Execution System</h2>
@@ -11938,9 +11941,8 @@ The next screen that comes up will indicate success or failure. Hopefully you wi
   <img src="images/buildExeSys.png" alt="Systems Page.">
 </p>
 <p>This definition is a long one.  You can fill it in using the web page listed below if you get too far behind.<br>
-<p>As before, you can get most of the defaults filled in by using our <a href="exec-system.txt">json code.</a>
+<p>As before, you can get most of the defaults filled in by using our <a href="exec-system.txt">exec system json code.</a>
 
-  <a href="http://krt3.lsu.edu/training/agave/tutorial-2-20-19/AgaveWebAPI.html" target="_blank">http://krt3.lsu.edu/training/agave/tutorial-2-20-19/AgaveWebAPI.html</a>
   <br>
 Just like in the first page of the build Storage you choose the "Form" link if you see code.  Then you use the drop down menu to chose "Execution".
 
@@ -12001,7 +12003,7 @@ THis is where we fill in the rest of the Queue information:
 
 <h2 id=CreateApp">Create the Application</h2>
 <p>This is a series of Agave forms to create an application.  </p>
-<p>As before, we provide <a href="app.txt">json code</a> to help you.</p>
+<p>As before, we provide <a href="app.txt">app json code</a> to help you.</p>
 
 <img src="images/CreateApp.png">
 <img src="images/createApp1.png">
@@ -12021,6 +12023,22 @@ THis is where we fill in the rest of the Queue information:
 
 <p>  </p>
 
+<H2>Running Jobs</H2>
+
+<ul>
+<li> Select "Apps" from the left menu
+<li> Click on the "Actions" button for your App
+<li> Select run
+<li> Fill in the input file name. You can browse to the location of the file which has been
+     pre-uploaded for your use, but currently it's difficult to use. Simply enter an URL of the
+     form:
+
+     <pre>agave://storage-hpctrn20//home/hpctrn20/input.txt</pre>
+
+     Where "storage-hpctrn20" is the name of your storage machine and "hpctrn20" is your shelob login.
+     Then submit. Use the details or history buttons to monitor progress.
+
+<!--
 <h2 id="SetupHPCaccount">Setup Shelob Account</h2>
 
 <p>To use Agave to submit jobs you need to create files for the machine you will use to execute (execution machine)your job, the one you use to store (storage machine) your data on and the file for the application you are going to use.  You need one file for each even if the same machine is used for both options.  We have created templates for you to use.   More about these as we setup our HPC account.</p>
@@ -12037,10 +12055,9 @@ Use the HPC training account or your HPC account to login to Shelob.
 </p>
 I have linked the files for your execution, storage and app files so that you can use the following command to get the execution machine file:
 
-<code>wget http://krt3.lsu.edu/training/agave/shelob-execution</code>
-  
 To use this you must 
 </p>
 </left>
+-->
 </body>
 </html>
