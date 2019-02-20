@@ -11938,6 +11938,7 @@ The next screen that comes up will indicate success or failure. Hopefully you wi
   <img src="images/buildExeSys.png" alt="Systems Page.">
 </p>
 <p>This definition is a long one.  You can fill it in using the web page listed below if you get too far behind.<br>
+<p>As before, you can get most of the defaults filled in by using our <a href="exec-system.txt">json code.</a>
 
   <a href="http://krt3.lsu.edu/training/agave/tutorial-2-20-19/AgaveWebAPI.html" target="_blank">http://krt3.lsu.edu/training/agave/tutorial-2-20-19/AgaveWebAPI.html</a>
   <br>
@@ -12000,6 +12001,7 @@ THis is where we fill in the rest of the Queue information:
 
 <h2 id=CreateApp">Create the Application</h2>
 <p>This is a series of Agave forms to create an application.  </p>
+<p>As before, we provide <a href="app.txt">json code</a> to help you.</p>
 
 <img src="images/CreateApp.png">
 <img src="images/createApp1.png">
@@ -12014,117 +12016,6 @@ THis is where we fill in the rest of the Queue information:
 <!-- <img src="images/.png"> -->
 
 
-App JSON code:
-<code>
-{
-  "id": "app22-0.1.0",
-  "name": "app22",
-  "icon": null,
-  "parallelism": "SERIAL",
-  "defaultProcessorsPerNode": 1,
-  "defaultMemoryPerNode": 64,
-  "defaultNodeCount": 1,
-  "defaultMaxRunTime": "01:00:00",
-  "defaultQueue": "shelob",
-  "version": "0.1.0",
-  "isPublic": false,
-  "helpURI": "http://developer.agaveapi.co/",
-  "label": "DrawGau",
-  "owner": "ktraxler-cct",
-  "shortDescription": "draw curve",
-  "longDescription": "draw Gaussian curve (points only)",
-  "tags": [
-    "execute",
-    "awesome",
-    "demo"
-  ],
-  "ontology": [
-    "execute",
-    "awesome",
-    "demo"
-  ],
-  "executionType": "HPC",
-  "executionSystem": "krt-exec-shelob",
-  "deploymentPath": "agave-deployment",
-  "deploymentSystem": "ShelobStorage",
-  "templatePath": "/drawgau-wrapper.txt",
-  "testPath": "/test.txt",
-  "checkpointable": false,
-  "modules": [],
-  "inputs": [
-    {
-      "id": "parfile",
-      "value": {
-        "validator": "",
-        "visible": true,
-        "required": false,
-        "order": 0,
-        "enquote": false,
-        "default": "input.txt"
-      },
-      "details": {
-        "label": "input for the program",
-        "description": null,
-        "argument": null,
-        "showArgument": false,
-        "repeatArgument": false
-      },
-      "semantics": {
-        "minCardinality": 0,
-        "maxCardinality": 1,
-        "ontology": [],
-        "fileTypes": []
-      }
-    }
-  ],
-  "parameters": [
-    {
-      "id": "parfile",
-      "value": {
-        "visible": true,
-        "required": false,
-        "type": "string",
-        "order": 0,
-        "enquote": false,
-        "default": "input.txt",
-        "validator": null
-      },
-      "details": {
-        "label": "DrawGau parameter file",
-        "description": "This is the actual shell command you want to run",
-        "argument": "",
-        "showArgument": false,
-        "repeatArgument": false
-      },
-      "semantics": {
-        "minCardinality": 1,
-        "maxCardinality": 1,
-        "ontology": []
-      }
-    }
-  ],
-  "outputs": [
-    {
-      "id": "Output",
-      "value": {
-        "validator": "",
-        "order": 1,
-        "default": "DRAWgau0.txt"
-      },
-      "details": {
-        "label": "DrawGau Run Results",
-        "description": null
-      },
-      "semantics": {
-        "minCardinality": 1,
-        "maxCardinality": 1,
-        "ontology": [],
-        "fileTypes": []
-      }
-    }
-  ]
-}
-</code>
 <p>  </p>
 
 

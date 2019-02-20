@@ -1,0 +1,77 @@
+{
+  "parallelism": "SERIAL",
+  "defaultProcessorsPerNode": 1,
+  "defaultMemoryPerNode": 64,
+  "defaultNodeCount": 1,
+  "defaultMaxRunTime": "01:00:00",
+  "defaultQueue": "checkpt",
+  "version": "0.1.0",
+  "isPublic": false,
+  "helpURI": "http://developer.agaveapi.co/",
+  "label": "DrawGau",
+  "shortDescription": "draw curve",
+  "longDescription": "draw Gaussian curve (points only)",
+  "tags": [
+    "execute",
+    "awesome",
+    "demo"
+  ],
+  "ontology": [
+    "execute",
+    "awesome",
+    "demo"
+  ],
+  "executionType": "HPC",
+  "deploymentPath": "agave-deployment",
+  "templatePath": "drawgau-wrapper.txt",
+  "testPath": "test.txt",
+  "checkpointable": false,
+  "modules": [],
+  "inputs": [
+    {
+      "id": "parfile",
+      "value": {
+        "validator": "",
+        "visible": true,
+        "required": false,
+        "order": 0,
+        "enquote": false,
+        "default": "input.txt"
+      },
+      "details": {
+        "label": "input for the program",
+        "description": null,
+        "argument": null,
+        "showArgument": false,
+        "repeatArgument": false
+      },
+      "semantics": {
+        "minCardinality": 0,
+        "maxCardinality": 1,
+        "ontology": [],
+        "fileTypes": []
+      }
+    }
+  ],
+  "parameters": [],
+  "outputs": [
+    {
+      "id": "Output",
+      "value": {
+        "validator": "",
+        "order": 1,
+        "default": "DRAWgau0.txt"
+      },
+      "details": {
+        "label": "DrawGau Run Results",
+        "description": null
+      },
+      "semantics": {
+        "minCardinality": 1,
+        "maxCardinality": 1,
+        "ontology": [],
+        "fileTypes": []
+      }
+    }
+  ]
+}
