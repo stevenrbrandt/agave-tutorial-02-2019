@@ -1,0 +1,27 @@
+{
+  "owner": "USERNAME",
+  "available": true,
+  "description": "The shelob computer",
+  "storage": {
+    "proxy": null,
+    "protocol": "SFTP",
+    "mirror": false,
+    "port": 22,
+    "auth": {
+      "type": "SSHKEYS"
+    },
+    "publicAppsDir": null,
+    "host": "shelob.hpc.lsu.edu",
+    "rootDir": "/",
+    "homeDir": "/home/USERNAME",
+    "proxyTunnel": "NO"
+  },
+  "type": "STORAGE",
+  "site": "hpc.lsu.edu",
+  "default": false,
+  "public": false,
+  "globalDefault": false,
+  "name": "shelob storage (ktraxler)",
+  "id": "shelob-storage-ktraxler2",
+  "status": "UP"
+}

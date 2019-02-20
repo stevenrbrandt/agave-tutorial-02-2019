@@ -1,0 +1,24 @@
+{
+  "available": true,
+  "description": "Shelob HPC Machine",
+  "storage": {
+    "proxy": null,
+    "protocol": "SFTP",
+    "mirror": false,
+    "port": 22,
+    "auth": {
+      "type": "PASSWORD"
+    },
+    "publicAppsDir": null,
+    "host": "shelob.hpc.lsu.edu",
+    "rootDir": "/",
+    "proxyTunnel": "NO"
+  },
+  "type": "STORAGE",
+  "site": "hpc.lsu.edu",
+  "default": true,
+  "public": false,
+  "globalDefault": false,
+  "name": "Shelob Storage",
+  "status": "UP"
+}

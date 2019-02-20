@@ -1,0 +1,2 @@
+parfile="input.txt"
+drawgau-wrapper.txt

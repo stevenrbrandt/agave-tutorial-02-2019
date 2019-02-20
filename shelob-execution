@@ -1,0 +1,58 @@
+{
+  "maxSystemJobs": 50,
+  "executionType": "HPC",
+  "available": true,
+  "description": "The shelob computer",
+  "storage": {
+    "proxy": null,
+    "protocol": "SFTP",
+    "mirror": false,
+    "port": 22,
+    "auth": {
+      "type": "SSHKEYS"
+    },
+    "host": "shelob.hpc.lsu.edu",
+    "rootDir": "/",
+    "homeDir": "/home/USERNAME",
+    "proxyTunnel": "NO"
+  },
+  "type": "EXECUTION",
+  "login": {
+    "proxy": null,
+    "protocol": "SSH",
+    "port": 22,
+    "auth": {
+      "type": "SSHKEYS"
+    },
+    "host": "shelob.hpc.lsu.edu",
+    "proxyTunnel": "NO"
+  },
+  "startupScript": null,
+  "scheduler": "CUSTOM_TORQUE",
+  "default": false,
+  "public": false,
+  "maxSystemJobsPerUser": 50,
+  "id": "shelob-exec-USERNAME",
+  "workDir": "/work/USERNAME/",
+  "owner": "USERNAME",
+  "site": "hpc.lsu.edu",
+  "environment": "",
+  "queues": [
+    {
+      "maxJobs": 10,
+      "maxMemoryPerNode": "-1GB",
+      "default": true,
+      "maxRequestedTime": "72:00:00",
+      "name": "shelob",
+      "description": null,
+      "maxNodes": 42,
+      "maxProcessorsPerNode": 16,
+      "mappedName": null,
+      "maxUserJobs": 10,
+      "customDirectives": "#PBS -A hpc_agave\n#PBS -l cput=${AGAVE_JOB_MAX_RUNTIME}\n#PBS -l walltime=${AGAVE_JOB_MAX_RUNTIME}\n#PBS -q ${AGAVE_JOB_BATCH_QUEUE}\n#PBS -l nodes=${AGAVE_JOB_NODE_COUNT}:ppn=16"
+    }
+  ],
+  "globalDefault": false,
+  "name": "shelob (USERNAME)",
+  "status": "UP",
+  "scratchDir": "/work/USERNAME/"

@@ -1,0 +1,32 @@
+Executing Draw Gau Code
+==ENV=============
+TERM_PROGRAM=Apple_Terminal
+AGAVE_USERNAME=ktraxler
+TERM=xterm-256color
+SHELL=/bin/bash
+TMPDIR=/var/folders/2d/5bz7dsj57yldpq20s5zsv66r0000gn/T/
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.gfnA4P7qOn/Render
+TERM_PROGRAM_VERSION=421.1
+TERM_SESSION_ID=7BC77AEE-2F47-4129-848C-59F5D4E7EE59
+USER=ktraxler
+SVN_EDITOR=/usr/bin/vim
+NGROK_TOKEN=3weciywSqY3mVUMk9bRpX_7Y863DFAjNaWV8XHdQVvP
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.SGKPbPUIrz/Listeners
+PATH=/usr/local/opt/python/libexec/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share:/Python/3.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin:/Library/Globus/bin:/Library/Globus/sbin:/agave-cli/cli/bin:/Library/TeX/texbin/
+PWD=/Users/ktraxler/lsu-training/tutorial-2-20-19/drawgau
+EDITOR=/usr/bin/vim
+LANG=en_US.UTF-8
+XPC_FLAGS=0x0
+AGAVE_PASSWORD=V9RfX2zEBunGv2tM
+XPC_SERVICE_NAME=0
+HOME=/Users/ktraxler
+SHLVL=2
+LOGNAME=ktraxler
+DISPLAY=/private/tmp/com.apple.launchd.3T2dRg5pSR/org.macosforge.xquartz:0
+SECURITYSESSIONID=186a7
+PYTHON=python3
+_=/usr/bin/env
+==PWD=============
+/Users/ktraxler/lsu-training/tutorial-2-20-19/drawgau
+==JOB=============
+The parfile was not set

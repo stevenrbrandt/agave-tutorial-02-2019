@@ -1,0 +1,52 @@
+{
+  "maxSystemJobs": 2147483647,
+  "executionType": "HPC",
+  "available": true,
+  "description": "LSU HPC Machine Shelob",
+  "storage": {
+    "proxy": null,
+    "protocol": "SFTP",
+    "mirror": false,
+    "port": 22,
+    "auth": {
+      "type": "PASSWORD"
+    },
+    "host": "shelob.hpc.lsu.edu",
+    "rootDir": "/",
+    "proxyTunnel": "NO"
+  },
+  "type": "EXECUTION",
+  "login": {
+    "proxy": null,
+    "protocol": "SSH",
+    "port": 22,
+    "auth": {
+      "type": "PASSWORD"
+    },
+    "host": "shelob.hpc.lsu.edu",
+    "proxyTunnel": "NO"
+  },
+  "startupScript": null,
+  "scheduler": "CUSTOM_TORQUE",
+  "default": false,
+  "public": false,
+  "maxSystemJobsPerUser": 2147483647,
+  "site": "hpc.lsu.edu",
+  "environment": "",
+  "queues": [
+    {
+      "maxJobs": 10,
+      "default": true,
+      "maxRequestedTime": "72:00:00",
+      "name": "checkpt",
+      "description": null,
+      "maxNodes": 128,
+      "maxProcessorsPerNode": 16,
+      "maxUserJobs": 10,
+      "customDirectives": "#PBS -A hpc_train_2018\n#PBS -l walltime=${AGAVE_JOB_MAX_RUNTIME}\nPBS -q ${AGAVE_JOB_BATCH_QUEUE}\n#PBS -l nodes=${AGAVE_JOB_NODE_COUNT}:ppn=16"
+    }
+  ],
+  "globalDefault": false,
+  "name": "Shelob HPC",
+  "status": "UP"
+}
